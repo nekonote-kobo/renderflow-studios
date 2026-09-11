@@ -1,0 +1,151 @@
+site_name: "RenderFlow Studios"
+site_description: "RenderFlow Studios - Blender add-on documentation. Render style presets, camera control and layer-based compositing for video production."
+site_author: "Adacchi-MultiCreator"
+site_url: "https://adacchi-multicreator.github.io/RenderFlow_Studio-Document/"
+copyright: "&copy;2026 Adacchi-MultiCreator ALL Rights Reserved."
+use_directory_urls: false
+
+theme:
+  name: "material"
+  logo: "assets/items/negative logo.svg"
+  favicon: "assets/items/positive icon.svg"
+  language: "ja"
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: "ライトモードに切り替え"
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: "ダークモードに切り替え"
+  font:
+    text: "Noto Sans JP"
+    code: "Inconsolata"
+  icon:
+    logo: material/movie-open
+    admonition:
+      note: material/note
+      abstract: material/check
+      info: material/information-outline
+      tip: material/lightbulb-on-outline
+      success: material/check-bold
+      question: material/help-circle-outline
+      warning: material/alert-outline
+      failure: material/close-octagon-outline
+      danger: material/alert-octagon-outline
+      bug: material/bug-outline
+      example: material/flask-outline
+      quote: material/format-quote-open-outline
+
+extra:
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: "https://x.com/3d_manga19094"
+      name: "Adacchi on X"
+    - icon: fontawesome/brands/github
+      link: "https://github.com/Adacchi-MultiCreator/RenderFlow-Studio-Issues"
+      name: "Issues"
+  generator: false
+
+extra_css:
+  - "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap"
+  - "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  - "assets/css/custom.css"
+
+plugins:
+  - search:
+      lang: "ja"
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: ja
+          name: "日本語"
+          default: true
+          build: true
+          nav:
+            - "TOP": index.md
+            - "はじめに":
+                - "動作環境": requirements.md
+                - "インストール": install.md
+                - "ライセンス認証": activation.md
+            - "使い方":
+                - "ガイド": guide.md
+                - "レンダースタイル": render_style.md
+                - "マイプリセット": my_presets.md
+                - "カメラ": camera.md
+                - "ガイド（セーフエリア）": camera_guides.md
+                - "コンポジットレイヤー": compositor.md
+            - "コンポジットレイヤー詳細":
+                - "レイヤーの種類": layer_types.md
+                - "調整レイヤー": adjustment.md
+                - "FX フィルター一覧": fx_filters.md
+                - "Look プリセット一覧": look_presets.md
+                - "マスクとクリッピング": masks.md
+            - "ヘルプ": help.md
+            - "リリースノート": release.md
+            - "ライセンス": license.md
+            - "上級者向け":
+                - "プリセットのカスタマイズ（JSON）": custom_presets.md
+                - "開発": development.md
+                - "翻訳": translation.md
+        - locale: en
+          name: "English"
+          build: true
+          nav:
+            - "TOP": index.md
+            - "Getting Started":
+                - "Requirements": requirements.md
+                - "Install": install.md
+                - "License Activation": activation.md
+            - "Usage":
+                - "Guide": guide.md
+                - "Render Style": render_style.md
+                - "My Presets": my_presets.md
+                - "Camera": camera.md
+                - "Guides (Safe Area)": camera_guides.md
+                - "Compositor Layers": compositor.md
+            - "Compositor Layer Reference":
+                - "Layer Types": layer_types.md
+                - "Adjustment Layers": adjustment.md
+                - "FX Filter Library": fx_filters.md
+                - "Look Presets": look_presets.md
+                - "Masks & Clipping": masks.md
+            - "Help": help.md
+            - "Release Notes": release.md
+            - "License": license.md
+            - "Advanced":
+                - "Customizing Presets (JSON)": custom_presets.md
+                - "Development": development.md
+                - "Translation": translation.md
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

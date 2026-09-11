@@ -1,0 +1,118 @@
+/* RenderFlow Studio docs */
+/* ===== Signal Mint palette (ロゴのミント × インク) ===== */
+:root {
+  --rfs-ink: #102B31;
+  --rfs-mint: #BAE9D3;
+  --rfs-font-display: "Chakra Petch", "Noto Sans JP", sans-serif;
+}
+/* ライト */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #102B31;
+  --md-primary-fg-color--light: #1C3F47;
+  --md-primary-fg-color--dark: #0B1F24;
+  --md-primary-bg-color: #E8F5EE;
+  --md-primary-bg-color--light: #BAE9D3;
+  --md-accent-fg-color: #14B98A;
+  --md-accent-fg-color--transparent: rgba(20, 185, 138, .12);
+  --md-accent-bg-color: #FFFFFF;
+  --md-default-bg-color: #F6FAF8;
+  --md-default-fg-color: #12262B;
+  --md-default-fg-color--light: #3E5A60;
+  --md-default-fg-color--lighter: #8FA9AD;
+  --md-default-fg-color--lightest: #D6E6E1;
+  --md-typeset-a-color: #0B8F68;
+  --md-code-bg-color: #E6F6EE;
+  --md-code-fg-color: #12262B;
+  --md-footer-bg-color: #102B31;
+  --md-footer-bg-color--dark: #0B1F24;
+  --rfs-tint: #E6F6EE;
+  --rfs-badge-fg: #0B1F24;
+}
+/* ダーク */
+[data-md-color-scheme="slate"] {
+  --md-hue: 190;
+  --md-primary-fg-color: #0B1517;
+  --md-primary-fg-color--light: #12292E;
+  --md-primary-fg-color--dark: #07100F;
+  --md-primary-bg-color: #E6F6EE;
+  --md-primary-bg-color--light: #BAE9D3;
+  --md-accent-fg-color: #5CF0B8;
+  --md-accent-fg-color--transparent: rgba(92, 240, 184, .14);
+  --md-accent-bg-color: #0B1517;
+  --md-default-bg-color: #0B1517;
+  --md-default-fg-color: #E4F2EC;
+  --md-default-fg-color--light: #A9C4BD;
+  --md-default-fg-color--lighter: #5E7A76;
+  --md-default-fg-color--lightest: #1F3A3F;
+  --md-typeset-a-color: #7CF2C6;
+  --md-code-bg-color: #12292E;
+  --md-code-fg-color: #E4F2EC;
+  --md-footer-bg-color: #07100F;
+  --md-footer-bg-color--dark: #050B0C;
+  --md-typeset-table-color: rgba(228, 242, 236, .12);
+  --rfs-tint: #12292E;
+  --rfs-badge-fg: #07100F;
+}
+/* ヘッダー：インク地にミントの発光ライン */
+.md-header { background: var(--md-primary-fg-color); box-shadow: inset 0 -2px 0 var(--md-accent-fg-color); }
+.md-tabs { background: var(--md-primary-fg-color--light); }
+.md-tabs__link--active, .md-tabs__link:hover { color: var(--md-accent-fg-color); }
+.md-header__title, .md-tabs__link { font-family: var(--rfs-font-display); letter-spacing: .02em; }
+.md-nav__link--active, .md-nav__item .md-nav__link--active { color: var(--md-accent-fg-color); }
+.md-search__form { background: rgba(255,255,255,.08); }
+.md-typeset a { color: var(--md-typeset-a-color); }
+.md-typeset a:hover { color: var(--md-accent-fg-color); }
+.md-typeset .md-button--primary { background: var(--md-accent-fg-color); border-color: var(--md-accent-fg-color); color: var(--rfs-badge-fg); }
+.md-typeset .md-button--primary:hover { filter: brightness(1.08); }
+.md-header__button.md-logo img, .md-header__button.md-logo svg { height: 1.4rem; width: auto; }
+
+/* 見出し（3D Manga Studios と同系統） */
+.md-typeset h1 {
+  padding: 0.3em 1em;
+  display: inline-block;
+  font-family: var(--rfs-font-display);
+  font-weight: 700;
+  border-left: 15px solid var(--md-accent-fg-color);
+  border-bottom: 5px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color);
+  background-color: var(--rfs-tint);
+}
+.md-typeset h2 {
+  padding: 0.3em;
+  display: inline-block;
+  font-family: var(--rfs-font-display);
+  font-weight: 600;
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color);
+}
+.md-typeset h3 {
+  padding: 0.3em;
+  font-family: var(--rfs-font-display);
+  font-weight: 600;
+  border-bottom: 1px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color);
+}
+.md-typeset h1 .bi, .md-typeset h2 .bi, .md-typeset h3 .bi {
+  color: var(--md-accent-fg-color);
+  margin: 0 0.25em;
+}
+
+.md-typeset table:not([class]) { font-size: .8rem; }
+.md-typeset img.ui { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; }
+/* ライト / ダークで画像を出し分け（#only-light / #only-dark） */
+[data-md-color-scheme="default"] img[src$="#only-dark"],
+[data-md-color-scheme="slate"] img[src$="#only-light"] { display: none !important; }
+.md-typeset img.brand-logo { width: 100%; max-width: 100%; height: auto; display: block; margin: 1rem 0 2rem; }
+.md-typeset a.glightbox:has(> img.brand-logo) { display: block; width: 100%; }
+.badge { display: inline-block; padding: .1em .6em; border-radius: 1em; background: var(--md-accent-fg-color); color: var(--rfs-badge-fg); font-size: .7rem; font-weight: 700; }
+
+/* FX Before / After カード */
+.md-typeset .fx-card { border: 1px solid var(--md-default-fg-color--lightest); border-left: 4px solid var(--md-accent-fg-color); border-radius: 8px; background: color-mix(in srgb, var(--rfs-tint) 50%, transparent); padding: .8rem 1rem; margin: 0 0 1rem; }
+.md-typeset .fx-title { margin-bottom: .5rem; }
+.md-typeset .fx-pair { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.md-typeset .fx-pair figure { margin: 0; text-align: center; }
+.md-typeset .fx-pair img { width: 100%; height: auto; border-radius: 4px; display: block; }
+.md-typeset .fx-pair figcaption { font-size: .7rem; margin-top: .3rem; color: var(--md-default-fg-color--light); }
+.md-typeset .fx-noimg { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--md-default-fg-color--lighter); border-radius: 4px; font-size: .75rem; color: var(--md-default-fg-color--light); }
+.md-typeset .fx-params { font-size: .75rem; margin-top: .5rem; color: var(--md-default-fg-color--light); }
+@media screen and (max-width: 44.9375em) { .md-typeset .fx-pair { grid-template-columns: 1fr; } }
