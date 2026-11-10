@@ -6,6 +6,8 @@ Keep only part of the frame, or change how strongly an effect applies across the
 
 Choose from **Add Layer → Add Mask**. Masks are **white = show / black = hide**. A mask layer uses the **Multiply** blend mode by default, so adding one keeps the image below it only where the mask is white and turns the rest black (useful as a vignette or cut-out). Soften the edge with **Mask Blur** in Layer Properties.
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Ellipse Mask</b> — keeps only an elliptical region</div>
 <div class="fx-pair" markdown>
@@ -57,8 +59,12 @@ Choose from **Add Layer → Add Mask**. Masks are **white = show / black = hide*
 <div class="fx-params">Example settings: Inner = ALL / Edge = BLEED_OUT; a small ellipse connected as inner and a large one as outer in the Node Editor</div>
 </div>
 
+</div>
+
 !!! note "About the Double Edge Mask"
     The Double Edge Mask builds an edge band from an **Inner Mask** and an **Outer Mask** input. Right after adding it the inputs are not connected, so the result is black. Connect a mask node (e.g. Ellipse Mask) to each input in the Node Editor first.
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Paint Mask</b> — keeps only the area painted white</div>
@@ -75,6 +81,8 @@ Choose from **Add Layer → Add Mask**. Masks are **white = show / black = hide*
 <div class="fx-params">Blender node: Image (a mask image initialised to black)</div>
 <div class="fx-params">Parameters: brush (painted in the Image Editor), mask blur</div>
 <div class="fx-params">Example settings: white brush traced around the ribbon plus two dabs on the props / Mask Blur 3</div>
+</div>
+
 </div>
 
 The mask image painted for the example above. Only the white area is kept; the black area turns black.
@@ -103,6 +111,8 @@ Turning on **Clip to Below** in Layer Properties locks that layer's blend mode t
 └ Ellipse Mask                      ← keeps only the white area
   Scene (Render Layer)
 ```
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Clipping OFF</b> — Hue / Saturation layer stacked normally</div>
@@ -150,6 +160,8 @@ Turning on **Clip to Below** in Layer Properties locks that layer's blend mode t
 </div>
 <div class="fx-params">Layers: Hue / Saturation (Clip to Below ON) above an Ellipse Mask</div>
 <div class="fx-params">Example settings: Ellipse Width 0.5 / Height 0.8 / Blur 20; Hue 0.62 / Saturation 1.4</div>
+</div>
+
 </div>
 
 !!! tip "If the result gets too dark"

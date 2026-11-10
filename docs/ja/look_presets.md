@@ -4,6 +4,8 @@
 
 ## Look（色調）
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Cinematic (Teal / Orange)</b> — シャドウを青緑、ハイライトを橙に振る映画風の定番</div>
 <div class="fx-pair" markdown>
@@ -100,7 +102,11 @@
 <div class="fx-params">向いている用途: グラフィカルな表現、ポスター風</div>
 </div>
 
+</div>
+
 ## Filter（質感）
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Soft Glow</b> — 明部にやわらかいにじみ</div>
@@ -148,6 +154,8 @@
 </div>
 <div class="fx-params">構成: Filter（Sharpen）</div>
 <div class="fx-params">向いている用途: 仕上げの最後、縮小前の輪郭補強</div>
+</div>
+
 </div>
 
 !!! note

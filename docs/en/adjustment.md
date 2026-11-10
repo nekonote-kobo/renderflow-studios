@@ -10,6 +10,8 @@ Pick the type from **Add Adjustment**, the left-most button in the bottom row of
 
 ## Adjustment types
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Bright / Contrast</b> — Overall brightness and contrast</div>
 <div class="fx-pair" markdown>
@@ -110,6 +112,8 @@ Pick the type from **Add Adjustment**, the left-most button in the bottom row of
 <div class="fx-params">Blender node: Gamma</div>
 <div class="fx-params">Parameters: Gamma (below 1 brightens, above 1 darkens)</div>
 <div class="fx-params">Example settings: Gamma 1.8</div>
+</div>
+
 </div>
 
 ## Tips

@@ -7,29 +7,37 @@ use_directory_urls: false
 
 theme:
   name: "material"
-  logo: "assets/items/negative logo.svg"
+  logo: "assets/items/positive logo.svg"
   favicon: "assets/items/positive icon.svg"
   language: "ja"
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
-    - navigation.indexes
-    - content.code.copy
+    - navigation.instant
+    - toc.follow
+    - search.suggest
     - search.highlight
+    - content.code.copy
+    - content.tabs.link
   palette:
-    - scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-4
-        name: "ライトモードに切り替え"
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/brightness-7
         name: "ダークモードに切り替え"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: "ライトモードに切り替え"
   font:
     text: "Noto Sans JP"
     code: "Inconsolata"
@@ -59,16 +67,26 @@ extra:
       name: "Issues"
   generator: false
 
+hooks:
+  - hooks/cache_bust.py
+
 extra_css:
-  - "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap"
+  - "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+JP:wght@700;800;900&display=swap"
   - "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-  - "assets/css/custom.css"
+  - "stylesheets/extra.css"
+
+extra_javascript:
+  - "javascripts/extra.js"
 
 plugins:
   - search:
-      lang: "ja"
+      lang:
+        - ja
+        - en
   - i18n:
       docs_structure: folder
+      reconfigure_material: true
+      reconfigure_search: true
       languages:
         - locale: ja
           name: "日本語"
@@ -103,6 +121,22 @@ plugins:
         - locale: en
           name: "English"
           build: true
+          theme:
+            palette:
+              - media: "(prefers-color-scheme: light)"
+                scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: "Switch to dark mode"
+              - media: "(prefers-color-scheme: dark)"
+                scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: "Switch to light mode"
           nav:
             - "TOP": index.md
             - "Getting Started":
@@ -129,14 +163,19 @@ plugins:
                 - "Customizing Presets (JSON)": custom_presets.md
                 - "Development": development.md
                 - "Translation": translation.md
-  - glightbox
+  - glightbox:
+      skip_classes:
+        - ms-noz
 
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
   - tables
-  - toc
+  - def_list
+  - footnotes
+  - toc:
+      permalink: false
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -144,6 +183,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:

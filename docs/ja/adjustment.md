@@ -10,6 +10,8 @@
 
 ## 調整レイヤーの種類
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>明るさ / コントラスト</b> — 全体の明るさと明暗差を調整</div>
 <div class="fx-pair" markdown>
@@ -110,6 +112,8 @@
 <div class="fx-params">Blender ノード: Gamma</div>
 <div class="fx-params">パラメータ: Gamma（1 より小さいと明るく、大きいと暗く）</div>
 <div class="fx-params">比較の設定: Gamma 1.8</div>
+</div>
+
 </div>
 
 ## 使い方のコツ

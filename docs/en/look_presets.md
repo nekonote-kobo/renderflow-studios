@@ -4,6 +4,8 @@ Choose from **Add Layer → Add Preset**. A node group with several nodes in ser
 
 ## Looks (color grading)
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Cinematic (Teal / Orange)</b> — the classic film look: teal shadows, orange highlights</div>
 <div class="fx-pair" markdown>
@@ -100,7 +102,11 @@ Choose from **Add Layer → Add Preset**. A node group with several nodes in ser
 <div class="fx-params">Good for: graphic looks, poster-like frames</div>
 </div>
 
+</div>
+
 ## Filters (texture)
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Soft Glow</b> — soft bloom on highlights</div>
@@ -148,6 +154,8 @@ Choose from **Add Layer → Add Preset**. A node group with several nodes in ser
 </div>
 <div class="fx-params">Nodes: Filter (Sharpen)</div>
 <div class="fx-params">Good for: final polish, before downscaling</div>
+</div>
+
 </div>
 
 !!! note

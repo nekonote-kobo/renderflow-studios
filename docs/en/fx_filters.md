@@ -9,6 +9,8 @@ Choose from **Add Layer → Add Filter**. In each card the left image is before,
 
 ## FX1 Basic
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Blur</b> — Gaussian blur</div>
 <div class="fx-pair" markdown>
@@ -84,8 +86,12 @@ Choose from **Add Layer → Add Filter**. In each card the left image is before,
 <div class="fx-params">Parameters: Texture type, mix, strength</div>
 </div>
 
+</div>
+
 
 ## FX2 Optical
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Chromatic Aberration</b> — Color fringing</div>
@@ -162,8 +168,12 @@ Choose from **Add Layer → Add Filter**. In each card the left image is before,
 <div class="fx-params">Parameters: Amount</div>
 </div>
 
+</div>
+
 
 ## FX3 Color
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Sepia</b> — Faded brown tone</div>
@@ -195,8 +205,12 @@ Choose from **Add Layer → Add Filter**. In each card the left image is before,
 
 </div>
 
+</div>
+
 
 ## FX4 NPR
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Comic</b> — Posterized tones + outlines</div>
@@ -318,8 +332,12 @@ Choose from **Add Layer → Add Filter**. In each card the left image is before,
 
 </div>
 
+</div>
+
 
 ## FX5 Retro
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>8bit</b> — Reduced palette + pixelation</div>
@@ -362,6 +380,8 @@ Choose from **Add Layer → Add Filter**. In each card the left image is before,
 ![16bit](../assets/fx/fx5_16bit.jpg)
 <figcaption>After</figcaption>
 </figure>
+</div>
+
 </div>
 
 </div>

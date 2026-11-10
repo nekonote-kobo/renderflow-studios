@@ -9,6 +9,8 @@
 
 ## FX1 基本
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Blur</b> — ガウスぼかし</div>
 <div class="fx-pair" markdown>
@@ -84,8 +86,12 @@
 <div class="fx-params">主なパラメータ: テクスチャ種類、ミックス、強さ</div>
 </div>
 
+</div>
+
 
 ## FX2 光学
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>Chromatic Aberration</b> — 色収差</div>
@@ -162,8 +168,12 @@
 <div class="fx-params">主なパラメータ: 歪み量</div>
 </div>
 
+</div>
+
 
 ## FX3 色
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>セピア</b> — 褪せた褐色調</div>
@@ -195,8 +205,12 @@
 
 </div>
 
+</div>
+
 
 ## FX4 NPR（非写実）
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>コミック</b> — 階調の減色＋輪郭線</div>
@@ -318,8 +332,12 @@
 
 </div>
 
+</div>
+
 
 ## FX5 レトロ
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>8bit</b> — 減色＋ドット化</div>
@@ -362,6 +380,8 @@
 ![16bit](../assets/fx/fx5_16bit.jpg)
 <figcaption>適用後</figcaption>
 </figure>
+</div>
+
 </div>
 
 </div>

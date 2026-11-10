@@ -6,6 +6,8 @@
 
 **レイヤーを追加 → マスクを追加** から選びます。マスクは **白 = 表示 / 黒 = 非表示** です。マスクレイヤーは既定で **乗算** ブレンドになっているため、追加するとそれより下の画像がマスクの白い範囲だけ残り、黒い範囲は黒くなります（ビネットや切り抜きとして使えます）。エッジの柔らかさは Layer Properties の **マスクぼかし** で調整します。
 
+<div class="fx-grid" markdown>
+
 <div class="fx-card" markdown>
 <div class="fx-title"><b>楕円マスク</b> — 楕円形の範囲だけを残す</div>
 <div class="fx-pair" markdown>
@@ -57,8 +59,12 @@
 <div class="fx-params">比較の設定: 内側 = ALL / エッジ = BLEED_OUT。小さい楕円マスクを内側、大きい楕円マスクを外側にノードエディタで接続</div>
 </div>
 
+</div>
+
 !!! note "ダブルエッジマスクについて"
     ダブルエッジマスクは **内側マスク** と **外側マスク** の 2 つの入力から縁取りを作るノードです。追加した直後は入力が揃っていないため真っ黒になります。ノードエディタで内側・外側にそれぞれマスクノード（楕円マスクなど）を接続してから使ってください。
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>ペイントマスク</b> — 画像に白く塗った範囲だけを残す</div>
@@ -75,6 +81,8 @@
 <div class="fx-params">Blender ノード: Image（黒で初期化したマスク画像）</div>
 <div class="fx-params">パラメータ: ブラシ（画像エディタでペイント）、マスクぼかし</div>
 <div class="fx-params">比較の設定: 白ブラシでリボンの周りをなぞり、小物に 2 か所ダブ / マスクぼかし 3</div>
+</div>
+
 </div>
 
 上の例で塗ったマスク画像です。白い部分だけが残り、黒い部分は黒くなります。
@@ -103,6 +111,8 @@ Layer Properties の **Clip to Below（クリッピング）** を ON にする�
 └ 楕円マスク                        ← 白い範囲だけを残す
   シーン（レンダーレイヤー）
 ```
+
+<div class="fx-grid" markdown>
 
 <div class="fx-card" markdown>
 <div class="fx-title"><b>クリッピング OFF</b> — 色相 / 彩度 レイヤーをそのまま重ねた状態</div>
@@ -150,6 +160,8 @@ Layer Properties の **Clip to Below（クリッピング）** を ON にする�
 </div>
 <div class="fx-params">レイヤー構成: 楕円マスク の上に 色相 / 彩度（Clip to Below ON）</div>
 <div class="fx-params">比較の設定: 楕円マスク 幅 0.5 / 高さ 0.8 / ぼかし 20、Hue 0.62 / Saturation 1.4</div>
+</div>
+
 </div>
 
 !!! tip "効果を一部だけに弱くかけたいとき"
