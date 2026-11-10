@@ -1,0 +1,3151 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="RenderFlow Studios - Blender add-on documentation. Render style presets, camera control and layer-based compositing for video production.">
+      
+      
+        <meta name="author" content="Adacchi-MultiCreator">
+      
+      
+        <link rel="canonical" href="https://adacchi-multicreator.github.io/RenderFlow_Studio-Document/en/translation.html">
+      
+      
+        <link rel="prev" href="development.html">
+      
+      
+      
+        
+          <link rel="alternate" href="../translation.html" hreflang="ja">
+        
+          <link rel="alternate" href="translation.html" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../assets/items/positive icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Translation - RenderFlow Studios</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2010V4.5l5.5%205.5M5%203c-1.11%200-2%20.89-2%202v14a2%202%200%200%200%202%202h14a2%202%200%200%200%202-2V9l-6-6z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M21%207%209%2019l-5.5-5.5%201.41-1.41L9%2016.17%2019.59%205.59z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M11%209h2V7h-2m1%2013c-4.41%200-8-3.59-8-8s3.59-8%208-8%208%203.59%208%208-3.59%208-8%208m0-18A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202m-1%2015h2v-6h-2z%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%2011h3v2h-3zM1%2011h3v2H1zM13%201v3h-2V1zM4.92%203.5l2.13%202.14-1.42%201.41L3.5%204.93zm12.03%202.13%202.12-2.13%201.43%201.43-2.13%202.12zM12%206a6%206%200%200%201%206%206c0%202.22-1.21%204.16-3%205.2V19a1%201%200%200%201-1%201h-4a1%201%200%200%201-1-1v-1.8c-1.79-1.04-3-2.98-3-5.2a6%206%200%200%201%206-6m2%2015v1a1%201%200%200%201-1%201h-2a1%201%200%200%201-1-1v-1zm-3-3h2v-2.13c1.73-.44%203-2.01%203-3.87a4%204%200%200%200-4-4%204%204%200%200%200-4%204c0%201.86%201.27%203.43%203%203.87z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22m9%2020.42-6.21-6.21%202.83-2.83L9%2014.77l9.88-9.89%202.83%202.83z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M11%2018h2v-2h-2zm1-16A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202m0%2018c-4.41%200-8-3.59-8-8s3.59-8%208-8%208%203.59%208%208-3.59%208-8%208m0-14a4%204%200%200%200-4%204h2a2%202%200%200%201%202-2%202%202%200%200%201%202%202c0%202-3%201.75-3%205h2c0-2.25%203-2.5%203-5a4%204%200%200%200-4-4%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202%201%2021h22M12%206l7.53%2013H4.47M11%2010v4h2v-4m-2%206v2h2v-2%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8.27%203%203%208.27v7.46L8.27%2021h7.46C17.5%2019.24%2021%2015.73%2021%2015.73V8.27L15.73%203M9.1%205h5.8L19%209.1v5.8L14.9%2019H9.1L5%2014.9V9.1m4.12-1.39L7.71%209.12%2010.59%2012l-2.88%202.88%201.41%201.41L12%2013.41l2.88%202.88%201.41-1.41L13.41%2012l2.88-2.88-1.41-1.41L12%2010.59%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8.27%203%203%208.27v7.46L8.27%2021h7.46C17.5%2019.24%2021%2015.73%2021%2015.73V8.27L15.73%203M9.1%205h5.8L19%209.1v5.8L14.9%2019H9.1L5%2014.9V9.1m6%205.9h2v2h-2zm0-8h2v6h-2z%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%208h-2.81c-.45-.8-1.07-1.5-1.82-2L17%204.41%2015.59%203l-2.17%202.17a6%206%200%200%200-2.83%200L8.41%203%207%204.41%208.62%206c-.75.5-1.36%201.21-1.81%202H4v2h2.09c-.06.33-.09.66-.09%201v1H4v2h2v1c0%20.34.03.67.09%201H4v2h2.81A5.99%205.99%200%200%200%2015%2020.18c.91-.52%201.67-1.28%202.19-2.18H20v-2h-2.09c.06-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.03-.67-.09-1H20zm-4%207a4%204%200%200%201-4%204%204%204%200%200%201-4-4v-4a4%204%200%200%201%204-4%204%204%200%200%201%204%204zm-2-5v2h-4v-2zm-4%204h4v2h-4z%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M5%2019a1%201%200%200%200%201%201h12a1%201%200%200%200%201-1c0-.21-.07-.41-.18-.57L13%208.35V4h-2v4.35L5.18%2018.43c-.11.16-.18.36-.18.57m1%203a3%203%200%200%201-3-3c0-.6.18-1.16.5-1.63L9%207.81V6a1%201%200%200%201-1-1V4a2%202%200%200%201%202-2h4a2%202%200%200%201%202%202v1a1%201%200%200%201-1%201v1.81l5.5%209.56c.32.47.5%201.03.5%201.63a3%203%200%200%201-3%203zm7-6%201.34-1.34L16.27%2018H7.73l2.66-4.61zm-.5-4a.5.5%200%200%201%20.5.5.5.5%200%200%201-.5.5.5.5%200%200%201-.5-.5.5.5%200%200%201%20.5-.5%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M11%2018v-8H9.12l2-4H5.38L3%2010.76V18m6-2H5v-4.76L6.62%208h1.26l-2%204H9m12%206v-8h-1.88l2-4h-5.74L13%2010.76V18m6-2h-4v-4.76L16.62%208h1.26l-2%204H19Z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=Noto+Sans+JP:wght@700;800;900&amp;display=swap">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css?v=7fb7fbbe">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#translation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="RenderFlow Studios" class="md-header__button md-logo" aria-label="RenderFlow Studios" data-md-component="logo">
+      
+  <img src="../assets/items/positive logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RenderFlow Studios
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Translation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../translation.html" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="translation.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TOP
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="requirements.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="guide.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Usage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="layer_types.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Compositor Layer Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="help.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Help
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="release.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="license.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  License
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="custom_presets.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="RenderFlow Studios" class="md-nav__button md-logo" aria-label="RenderFlow Studios" data-md-component="logo">
+      
+  <img src="../assets/items/positive logo.svg" alt="logo">
+
+    </a>
+    RenderFlow Studios
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TOP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="activation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License Activation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Usage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guide.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="render_style.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Render Style
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my_presets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Presets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="camera.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="camera_guides.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides (Safe Area)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="compositor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compositor Layers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compositor Layer Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Compositor Layer Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layer_types.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layer Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adjustment.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adjustment Layers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fx_filters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FX Filter Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="look_presets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Look Presets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="masks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Masks &amp; Clipping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="help.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="release.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="license.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="custom_presets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customizing Presets (JSON)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="development.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Translation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="translation.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Translation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-or-fixing-a-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding or fixing a translation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other languages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#included-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Included dictionaries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Included dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-style-camera-translationjson-126-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Style &amp; Camera (translation.json, 126 entries)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Render Style &amp; Camera (translation.json, 126 entries)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-style-panel-output-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Style (panel, output, lines)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-volumetrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality: Volumetrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality: Lighting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera &amp; Guides
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooltips-beginner-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tooltips (beginner descriptions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Presets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositor-layers-translation-compositjson-87-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compositor Layers (translation composit.json, 87 entries)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compositor Layers (translation composit.json, 87 entries)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fx-filter-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FX filter parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview &amp; Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layers-layer-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layers &amp; layer menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-or-fixing-a-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding or fixing a translation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other languages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#included-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Included dictionaries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Included dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-style-camera-translationjson-126-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Style &amp; Camera (translation.json, 126 entries)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Render Style &amp; Camera (translation.json, 126 entries)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-style-panel-output-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Style (panel, output, lines)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-volumetrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality: Volumetrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality: Lighting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera &amp; Guides
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooltips-beginner-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tooltips (beginner descriptions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Presets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositor-layers-translation-compositjson-87-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compositor Layers (translation composit.json, 87 entries)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compositor Layers (translation composit.json, 87 entries)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fx-filter-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FX filter parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview &amp; Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layers-layer-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layers &amp; layer menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="translation">Translation</h1>
+<p>RenderFlow Studios uses Blender's built-in translation system for Japanese and English. The dictionaries live in <code>DB/translation.json</code> (Render Style, Camera) and <code>DB/translation composit.json</code> (Compositor Layers). Japanese is shown when Blender's language is Japanese; English otherwise.</p>
+<h2 id="file-format">File format</h2>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Key"</span><span class="p">:</span><span class="w">                  </span><span class="p">[</span><span class="s2">"Render Style"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Output"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Quality"</span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"English Text"</span><span class="p">:</span><span class="w">         </span><span class="p">[</span><span class="s2">"Render Style"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Output"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Quality"</span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Japanese Translation"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"レンダースタイル"</span><span class="p">,</span><span class="w"> </span><span class="s2">"出力"</span><span class="p">,</span><span class="w"> </span><span class="s2">"品質"</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>The three arrays have the same length; the same index forms one translation. <code>Key</code> must match the string in the source code exactly (e.g. <code>text="Output"</code>). The compositor module uses Japanese strings as keys, so <code>Key</code> and <code>日本語</code> are identical there.</p>
+<h2 id="adding-or-fixing-a-translation">Adding or fixing a translation</h2>
+<ol>
+<li>Open the JSON as UTF-8.</li>
+<li>Add the entry at the same position in <code>Key</code>, <code>English Text</code> and <code>Japanese Translation</code>.</li>
+<li>Disable and re-enable the add-on (or restart Blender).</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Manage in Excel</p>
+<p>The "render presets.py" and "composit_layer.py" sheets in <code>レンダリング設定集.xlsx</code> mirror the three-column layout.</p>
+</div>
+<h2 id="other-languages">Other languages</h2>
+<p>Only Japanese and English are included. Additional locales can be added in <code>load_translation_dict()</code> in <code>__init__.py</code>. Requests are welcome on Issues.</p>
+<hr>
+<h2 id="included-dictionaries">Included dictionaries</h2>
+<h3 id="render-style-camera-translationjson-126-entries">Render Style &amp; Camera (<code>translation.json</code>, 126 entries)</h3>
+<h4 id="render-style-panel-output-lines">Render Style (panel, output, lines)</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Render Engine</td>
+<td>Render Engine</td>
+<td>レンダーエンジン</td>
+</tr>
+<tr>
+<td>Resolution %</td>
+<td>Resolution %</td>
+<td>解像度（％）</td>
+</tr>
+<tr>
+<td>Filter Size (px)</td>
+<td>Filter Size (px)</td>
+<td>フィルターサイズ</td>
+</tr>
+<tr>
+<td>No active camera</td>
+<td>No active camera</td>
+<td>カメラがありません</td>
+</tr>
+<tr>
+<td>Color Management</td>
+<td>Color Management</td>
+<td>カラーマネージメント</td>
+</tr>
+<tr>
+<td>FreeStyle</td>
+<td>FreeStyle</td>
+<td>FreeStyle</td>
+</tr>
+<tr>
+<td>Line Thickness</td>
+<td>Line Thickness</td>
+<td>線幅</td>
+</tr>
+<tr>
+<td>Absolute</td>
+<td>Absolute</td>
+<td>絶対値</td>
+</tr>
+<tr>
+<td>Relative</td>
+<td>Relative</td>
+<td>相対値</td>
+</tr>
+<tr>
+<td>Frame Rate</td>
+<td>Frame Rate</td>
+<td>フレームレート</td>
+</tr>
+<tr>
+<td>FPS</td>
+<td>FPS</td>
+<td>FPS</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>Base</td>
+<td>ベース</td>
+</tr>
+<tr>
+<td>Apply</td>
+<td>Apply</td>
+<td>適用</td>
+</tr>
+<tr>
+<td>Apply Render Preset</td>
+<td>Apply Render Preset</td>
+<td>レンダリングプリセットを適用する</td>
+</tr>
+<tr>
+<td>Set Preset</td>
+<td>Set Preset</td>
+<td>プリセットを適用する</td>
+</tr>
+<tr>
+<td>Apply the selected render preset</td>
+<td>Apply the selected render preset</td>
+<td>レンダリングプリセットの設定を適用する</td>
+</tr>
+<tr>
+<td>Preset</td>
+<td>Preset</td>
+<td>プリセット</td>
+</tr>
+<tr>
+<td>Preset Index</td>
+<td>Preset Index</td>
+<td>プリセット番号</td>
+</tr>
+<tr>
+<td>Render Style</td>
+<td>Render Style</td>
+<td>レンダースタイル</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Output</td>
+<td>出力</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>Quality</td>
+<td>品質</td>
+</tr>
+<tr>
+<td>Lines</td>
+<td>Lines</td>
+<td>ライン</td>
+</tr>
+<tr>
+<td>Samples</td>
+<td>Samples</td>
+<td>サンプル</td>
+</tr>
+<tr>
+<td>Render</td>
+<td>Render</td>
+<td>レンダー</td>
+</tr>
+<tr>
+<td>Viewport</td>
+<td>Viewport</td>
+<td>ビューポート</td>
+</tr>
+<tr>
+<td>Soft Shadows</td>
+<td>Soft Shadows</td>
+<td>ソフトシャドウ</td>
+</tr>
+</tbody>
+</table>
+<h4 id="quality-volumetrics">Quality: Volumetrics</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Volumetrics</td>
+<td>Volumetrics</td>
+<td>ボリューム</td>
+</tr>
+<tr>
+<td>Tile Size</td>
+<td>Tile Size</td>
+<td>タイルサイズ</td>
+</tr>
+<tr>
+<td>Volume Samples</td>
+<td>Volume Samples</td>
+<td>ボリュームサンプル</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>Distribution</td>
+<td>サンプル分布</td>
+</tr>
+<tr>
+<td>Volume Shadows</td>
+<td>Volume Shadows</td>
+<td>ボリュームの影</td>
+</tr>
+<tr>
+<td>Shadow Samples</td>
+<td>Shadow Samples</td>
+<td>影のサンプル数</td>
+</tr>
+<tr>
+<td>Step Rate Render</td>
+<td>Step Rate Render</td>
+<td>ステップレート（レンダー）</td>
+</tr>
+<tr>
+<td>Step Rate Viewport</td>
+<td>Step Rate Viewport</td>
+<td>ステップレート（ビューポート）</td>
+</tr>
+<tr>
+<td>Max Steps</td>
+<td>Max Steps</td>
+<td>最大ステップ数</td>
+</tr>
+<tr>
+<td>Volume Bounces</td>
+<td>Volume Bounces</td>
+<td>ボリュームバウンス</td>
+</tr>
+</tbody>
+</table>
+<h4 id="quality-lighting">Quality: Lighting</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lighting</td>
+<td>Lighting</td>
+<td>ライティング</td>
+</tr>
+<tr>
+<td>Max Bounces</td>
+<td>Max Bounces</td>
+<td>最大バウンス</td>
+</tr>
+<tr>
+<td>Diffuse</td>
+<td>Diffuse</td>
+<td>ディフューズ</td>
+</tr>
+<tr>
+<td>Glossy</td>
+<td>Glossy</td>
+<td>光沢</td>
+</tr>
+<tr>
+<td>Reflective Caustics</td>
+<td>Reflective Caustics</td>
+<td>反射コースティクス</td>
+</tr>
+<tr>
+<td>Refractive Caustics</td>
+<td>Refractive Caustics</td>
+<td>屈折コースティクス</td>
+</tr>
+<tr>
+<td>Shadow Rays</td>
+<td>Shadow Rays</td>
+<td>影のレイ数</td>
+</tr>
+<tr>
+<td>Shadow Steps</td>
+<td>Shadow Steps</td>
+<td>影のステップ数</td>
+</tr>
+<tr>
+<td>Shadow Resolution</td>
+<td>Shadow Resolution</td>
+<td>影の解像度</td>
+</tr>
+</tbody>
+</table>
+<h4 id="camera-guides">Camera &amp; Guides</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera</td>
+<td>Camera</td>
+<td>カメラ</td>
+</tr>
+<tr>
+<td>Set as Scene Camera</td>
+<td>Set as Scene Camera</td>
+<td>シーンカメラに設定</td>
+</tr>
+<tr>
+<td>Make the active camera object the scene camera</td>
+<td>Make the active camera object the scene camera</td>
+<td>選択中のカメラをシーンカメラにする</td>
+</tr>
+<tr>
+<td>Camera View</td>
+<td>Camera View</td>
+<td>カメラビュー</td>
+</tr>
+<tr>
+<td>Toggle camera view in the 3D viewport</td>
+<td>Toggle camera view in the 3D viewport</td>
+<td>3Dビューのカメラビューを切り替える</td>
+</tr>
+<tr>
+<td>Camera Type</td>
+<td>Camera Type</td>
+<td>カメラタイプ</td>
+</tr>
+<tr>
+<td>Perspective</td>
+<td>Perspective</td>
+<td>透視投影</td>
+</tr>
+<tr>
+<td>Orthographic</td>
+<td>Orthographic</td>
+<td>平行投影</td>
+</tr>
+<tr>
+<td>Focal Length (mm)</td>
+<td>Focal Length (mm)</td>
+<td>焦点距離 (mm)</td>
+</tr>
+<tr>
+<td>Field of View</td>
+<td>Field of View</td>
+<td>視野角</td>
+</tr>
+<tr>
+<td>Ortho Scale</td>
+<td>Ortho Scale</td>
+<td>平行投影スケール</td>
+</tr>
+<tr>
+<td>Shift X</td>
+<td>Shift X</td>
+<td>シフト X</td>
+</tr>
+<tr>
+<td>Shift Y</td>
+<td>Shift Y</td>
+<td>シフト Y</td>
+</tr>
+<tr>
+<td>Depth of Field</td>
+<td>Depth of Field</td>
+<td>被写界深度</td>
+</tr>
+<tr>
+<td>Focus Object</td>
+<td>Focus Object</td>
+<td>フォーカスオブジェクト</td>
+</tr>
+<tr>
+<td>Focus Distance</td>
+<td>Focus Distance</td>
+<td>フォーカス距離</td>
+</tr>
+<tr>
+<td>F-Stop</td>
+<td>F-Stop</td>
+<td>F値</td>
+</tr>
+<tr>
+<td>Resolution X</td>
+<td>Resolution X</td>
+<td>幅 (px)</td>
+</tr>
+<tr>
+<td>Resolution Y</td>
+<td>Resolution Y</td>
+<td>高さ (px)</td>
+</tr>
+<tr>
+<td>Guides</td>
+<td>Guides</td>
+<td>ガイド</td>
+</tr>
+<tr>
+<td>Safe Areas</td>
+<td>Safe Areas</td>
+<td>セーフエリア</td>
+</tr>
+<tr>
+<td>Draw safe area guides in camera view</td>
+<td>Draw safe area guides in camera view</td>
+<td>カメラビューにセーフエリアのガイドを表示</td>
+</tr>
+<tr>
+<td>Safe Area Mode</td>
+<td>Safe Area Mode</td>
+<td>セーフエリアモード</td>
+</tr>
+<tr>
+<td>Uniform</td>
+<td>Uniform</td>
+<td>均一</td>
+</tr>
+<tr>
+<td>Separate</td>
+<td>Separate</td>
+<td>個別</td>
+</tr>
+<tr>
+<td>Same margin on every side</td>
+<td>Same margin on every side</td>
+<td>全辺同じ余白</td>
+</tr>
+<tr>
+<td>Different margins for left/right and top/bottom</td>
+<td>Different margins for left/right and top/bottom</td>
+<td>左右と上下で別々の余白</td>
+</tr>
+<tr>
+<td>Margin (px)</td>
+<td>Margin (px)</td>
+<td>余白 (px)</td>
+</tr>
+<tr>
+<td>Left / Right (px)</td>
+<td>Left / Right (px)</td>
+<td>左右 (px)</td>
+</tr>
+<tr>
+<td>Top / Bottom (px)</td>
+<td>Top / Bottom (px)</td>
+<td>上下 (px)</td>
+</tr>
+<tr>
+<td>Safe area margin in render pixels</td>
+<td>Safe area margin in render pixels</td>
+<td>レンダリング解像度基準のセーフエリア余白（px）</td>
+</tr>
+<tr>
+<td>Safe Areas Color</td>
+<td>Safe Areas Color</td>
+<td>セーフエリアの色</td>
+</tr>
+<tr>
+<td>Layout Color</td>
+<td>Layout Color</td>
+<td>レイアウトの色</td>
+</tr>
+<tr>
+<td>Layout Line Width</td>
+<td>Layout Line Width</td>
+<td>レイアウトの線幅</td>
+</tr>
+<tr>
+<td>Enable Columns</td>
+<td>Enable Columns</td>
+<td>列を有効化</td>
+</tr>
+<tr>
+<td>Enable Rows</td>
+<td>Enable Rows</td>
+<td>行を有効化</td>
+</tr>
+<tr>
+<td>Columns</td>
+<td>Columns</td>
+<td>列</td>
+</tr>
+<tr>
+<td>Rows</td>
+<td>Rows</td>
+<td>行</td>
+</tr>
+<tr>
+<td>Guides are shown in camera view</td>
+<td>Guides are shown in camera view</td>
+<td>ガイドはカメラビューで表示されます</td>
+</tr>
+<tr>
+<td>Lens Details</td>
+<td>Lens Details</td>
+<td>レンズ詳細</td>
+</tr>
+<tr>
+<td>Clip Start</td>
+<td>Clip Start</td>
+<td>クリップ 開始</td>
+</tr>
+<tr>
+<td>Clip End</td>
+<td>Clip End</td>
+<td>クリップ 終了</td>
+</tr>
+<tr>
+<td>Layout Guides</td>
+<td>Layout Guides</td>
+<td>レイアウトガイド</td>
+</tr>
+<tr>
+<td>Display Settings</td>
+<td>Display Settings</td>
+<td>表示設定</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tooltips-beginner-descriptions">Tooltips (beginner descriptions)</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light bounced off mirrors or shiny metal makes bright patterns on nearby surfaces. Turn on for realism (more noise, longer render)</td>
+<td>Light bounced off mirrors or shiny metal makes bright patterns on nearby surfaces. Turn on for realism (more noise, longer render)</td>
+<td>鏡や金属など光を反射する面で跳ね返った光が、周りの物に作る明るい模様を計算します。ONにするとリアルになりますが、ノイズが増えレンダリング時間も伸びます</td>
+</tr>
+<tr>
+<td>Light passing through glass or water makes bright patterns on the floor or walls, like ripples at the bottom of a pool. Turn on for realism (more noise, longer render)</td>
+<td>Light passing through glass or water makes bright patterns on the floor or walls, like ripples at the bottom of a pool. Turn on for realism (more noise, longer render)</td>
+<td>ガラスや水など光を通す物を抜けた光が、床や壁に作る明るい模様（プールの底のゆらめきなど）を計算します。ONにするとリアルになりますが、ノイズが増えレンダリング時間も伸びます</td>
+</tr>
+<tr>
+<td>How many times light can bounce between objects. Higher = more natural indirect light but slower renders. 4-12 is usual</td>
+<td>How many times light can bounce between objects. Higher = more natural indirect light but slower renders. 4-12 is usual</td>
+<td>光が物体の間で跳ね返る最大回数。多いほど間接光が自然になりますが、レンダリングは遅くなります。通常は4〜12</td>
+</tr>
+<tr>
+<td>Bounces for light scattered by matte surfaces (walls, cloth). Raises light in shadows and corners. 2-4 is enough for most scenes</td>
+<td>Bounces for light scattered by matte surfaces (walls, cloth). Raises light in shadows and corners. 2-4 is enough for most scenes</td>
+<td>壁や布などつや消しの面で散った光の跳ね返り回数。影や部屋の隅が明るくなります。多くのシーンでは2〜4で十分</td>
+</tr>
+<tr>
+<td>Bounces for light reflected by shiny surfaces (metal, plastic). Needed for reflections of reflections. 2-4 is enough for most scenes</td>
+<td>Bounces for light reflected by shiny surfaces (metal, plastic). Needed for reflections of reflections. 2-4 is enough for most scenes</td>
+<td>金属やプラスチックなど光沢面で反射した光の跳ね返り回数。映り込みの中の映り込みに必要。多くのシーンでは2〜4で十分</td>
+</tr>
+<tr>
+<td>How many rays are used to soften shadow edges. 1 = hard, grainy edges (fast). 4+ = smooth soft shadows (slower)</td>
+<td>How many rays are used to soften shadow edges. 1 = hard, grainy edges (fast). 4+ = smooth soft shadows (slower)</td>
+<td>影の縁をなめらかにするために使うレイの本数。1＝硬くザラついた縁（速い）、4以上＝なめらかな柔らかい影（遅い）</td>
+</tr>
+<tr>
+<td>Accuracy of each shadow ray. Low values can leak light through thin objects; higher values fix that at a small speed cost</td>
+<td>Accuracy of each shadow ray. Low values can leak light through thin objects; higher values fix that at a small speed cost</td>
+<td>影のレイ1本あたりの精度。低いと薄い物体から光が漏れることがあり、高くすると解消しますが少し遅くなります</td>
+</tr>
+<tr>
+<td>Sharpness of shadow outlines. 0.25 = blocky, pixel-like shadows. 1.0 = normal. 2.0 = extra crisp (uses more GPU memory)</td>
+<td>Sharpness of shadow outlines. 0.25 = blocky, pixel-like shadows. 1.0 = normal. 2.0 = extra crisp (uses more GPU memory)</td>
+<td>影の輪郭の細かさ。0.25＝カクカクしたドット状の影、1.0＝標準、2.0＝よりくっきり（GPUメモリを多く使います）</td>
+</tr>
+<tr>
+<td>Size of the blocks used to draw fog and smoke. Small = fine, smooth fog (slower). Large = chunky, blocky fog (fast, retro look)</td>
+<td>Size of the blocks used to draw fog and smoke. Small = fine, smooth fog (slower). Large = chunky, blocky fog (fast, retro look)</td>
+<td>霧や煙を描くブロックの大きさ。小さいほど細かくなめらか（遅い）、大きいほど粗くブロック状（速い・レトロな見た目）</td>
+</tr>
+<tr>
+<td>How many slices the fog is divided into from near to far. Higher = smoother light beams, lower = visible banding</td>
+<td>How many slices the fog is divided into from near to far. Higher = smoother light beams, lower = visible banding</td>
+<td>霧を手前から奥へ何枚の層に分けて計算するか。多いほど光の帯がなめらかになり、少ないと縞模様が出ます</td>
+</tr>
+<tr>
+<td>Where the fog slices are concentrated. 1 = more detail close to the camera, 0 = evenly spread. 0.8 works for most scenes</td>
+<td>Where the fog slices are concentrated. 1 = more detail close to the camera, 0 = evenly spread. 0.8 works for most scenes</td>
+<td>霧の層をどこに集中させるか。1＝カメラの近くを細かく、0＝均等。多くのシーンでは0.8で問題ありません</td>
+</tr>
+<tr>
+<td>Let fog and smoke cast shadows on themselves and on objects. Makes thick fog look solid. Off is faster</td>
+<td>Let fog and smoke cast shadows on themselves and on objects. Makes thick fog look solid. Off is faster</td>
+<td>霧や煙が自分自身や物体に影を落とすようにします。濃い霧に立体感が出ます。OFFのほうが速い</td>
+</tr>
+<tr>
+<td>Quality of the shadows inside fog. Higher = smoother, slower. Only used when Volume Shadows is on</td>
+<td>Quality of the shadows inside fog. Higher = smoother, slower. Only used when Volume Shadows is on</td>
+<td>霧の中の影の品質。高いほどなめらかで遅くなります。ボリュームの影がONのときだけ使われます</td>
+</tr>
+<tr>
+<td>Distance between fog samples when rendering. Smaller = more detail but slower. 0.5 = high quality, 4 = fast and rough</td>
+<td>Distance between fog samples when rendering. Smaller = more detail but slower. 0.5 = high quality, 4 = fast and rough</td>
+<td>レンダリング時に霧を計算する間隔。小さいほど細かく遅くなります。0.5＝高品質、4＝速いが粗い</td>
+</tr>
+<tr>
+<td>Same as Step Rate Render, but for the 3D viewport preview. Keep it larger than the render value to keep the viewport fast</td>
+<td>Same as Step Rate Render, but for the 3D viewport preview. Keep it larger than the render value to keep the viewport fast</td>
+<td>ステップレート（レンダー）の3Dビューポート用。ビューポートを軽く保つため、レンダー用より大きい値にしておきます</td>
+</tr>
+<tr>
+<td>Upper limit on fog samples per ray. Prevents very thick fog from taking forever. 1024 is the default</td>
+<td>Upper limit on fog samples per ray. Prevents very thick fog from taking forever. 1024 is the default</td>
+<td>レイ1本あたりの霧の計算回数の上限。濃すぎる霧で時間がかかりすぎるのを防ぎます。標準は1024</td>
+</tr>
+<tr>
+<td>How many times light can scatter inside fog. 0 = light passes straight through (fast). 1+ = glowing, milky fog (slower)</td>
+<td>How many times light can scatter inside fog. 0 = light passes straight through (fast). 1+ = glowing, milky fog (slower)</td>
+<td>霧の中で光が散乱する回数。0＝光がそのまま通り抜ける（速い）、1以上＝乳白色に光る霧（遅い）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="my-presets">My Presets</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>My Presets</td>
+<td>My Presets</td>
+<td>マイプリセット</td>
+</tr>
+<tr>
+<td>Save the current settings as a preset</td>
+<td>Save the current settings as a preset</td>
+<td>今の設定をプリセットとして保存</td>
+</tr>
+<tr>
+<td>Save</td>
+<td>Save</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td>Delete</td>
+<td>削除</td>
+</tr>
+<tr>
+<td>Selected: my preset (can be deleted)</td>
+<td>Selected: my preset (can be deleted)</td>
+<td>選択中: マイプリセット（削除できます）</td>
+</tr>
+<tr>
+<td>Selected: built-in preset</td>
+<td>Selected: built-in preset</td>
+<td>選択中: 標準プリセット</td>
+</tr>
+<tr>
+<td>Open Folder</td>
+<td>Open Folder</td>
+<td>フォルダを開く</td>
+</tr>
+<tr>
+<td>Save My Preset</td>
+<td>Save My Preset</td>
+<td>マイプリセットを保存</td>
+</tr>
+<tr>
+<td>Delete My Preset</td>
+<td>Delete My Preset</td>
+<td>マイプリセットを削除</td>
+</tr>
+<tr>
+<td>Preset Name</td>
+<td>Preset Name</td>
+<td>プリセット名</td>
+</tr>
+<tr>
+<td>Same name exists: it will be overwritten</td>
+<td>Same name exists: it will be overwritten</td>
+<td>同じ名前があります。上書きされます</td>
+</tr>
+<tr>
+<td>Save the current render settings (output, quality, lines, safe area, color management) as a preset you can apply later</td>
+<td>Save the current render settings (output, quality, lines, safe area, color management) as a preset you can apply later</td>
+<td>今のレンダー設定（出力・品質・ライン・セーフエリア・カラーマネージメント）を、あとから適用できるプリセットとして保存します</td>
+</tr>
+<tr>
+<td>Name shown under the thumbnail. Using an existing name overwrites that preset</td>
+<td>Name shown under the thumbnail. Using an existing name overwrites that preset</td>
+<td>サムネイルの下に表示される名前。既にある名前を付けるとそのプリセットを上書きします</td>
+</tr>
+<tr>
+<td>Delete the selected preset. Only presets you saved can be deleted; built-in presets are kept</td>
+<td>Delete the selected preset. Only presets you saved can be deleted; built-in presets are kept</td>
+<td>選択中のプリセットを削除します。削除できるのは自分で保存したものだけで、標準プリセットは消えません</td>
+</tr>
+<tr>
+<td>Open the folder where your presets are saved (for backup or copying to another PC)</td>
+<td>Open the folder where your presets are saved (for backup or copying to another PC)</td>
+<td>プリセットの保存先フォルダを開きます（バックアップや別 PC へのコピー用）</td>
+</tr>
+<tr>
+<td>Change Thumbnail</td>
+<td>Change Thumbnail</td>
+<td>サムネイルを変更</td>
+</tr>
+<tr>
+<td>Reset Thumbnail</td>
+<td>Reset Thumbnail</td>
+<td>サムネイルを既定に戻す</td>
+</tr>
+<tr>
+<td>Thumbnail can be changed after saving</td>
+<td>Thumbnail can be changed after saving</td>
+<td>サムネイルは保存後に変更できます</td>
+</tr>
+<tr>
+<td>Choose an image (PNG / JPG) for the selected preset's thumbnail. It is cropped to a square and resized to 256 px</td>
+<td>Choose an image (PNG / JPG) for the selected preset's thumbnail. It is cropped to a square and resized to 256 px</td>
+<td>選択中のプリセットのサムネイルにする画像（PNG / JPG）を選びます。中央で正方形に切り抜き、256 px に縮小して登録します</td>
+</tr>
+<tr>
+<td>Go back to the default thumbnail for the selected preset</td>
+<td>Go back to the default thumbnail for the selected preset</td>
+<td>選択中のプリセットのサムネイルを既定の画像に戻します</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compositor-layers-translation-compositjson-87-entries">Compositor Layers (<code>translation composit.json</code>, 87 entries)</h3>
+<h4 id="fx-filter-parameters">FX filter parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FX1_基本_Blur</td>
+<td>FX1_Basic_Blur</td>
+<td>FX1_基本_Blur</td>
+</tr>
+<tr>
+<td>サイズ</td>
+<td>Size</td>
+<td>サイズ</td>
+</tr>
+<tr>
+<td>ぼかしサイズ（XYは常に同じ値に統一）</td>
+<td>Blur size (X and Y are always unified)</td>
+<td>ぼかしサイズ（XYは常に同じ値に統一）</td>
+</tr>
+<tr>
+<td>テクスチャ種類</td>
+<td>Texture Type</td>
+<td>テクスチャ種類</td>
+</tr>
+<tr>
+<td>テクスチャ</td>
+<td>Texture</td>
+<td>テクスチャ</td>
+</tr>
+<tr>
+<td>ノイズテクスチャ</td>
+<td>Noise Texture</td>
+<td>ノイズテクスチャ</td>
+</tr>
+<tr>
+<td>ホワイトノイズテクスチャ</td>
+<td>White Noise Texture</td>
+<td>ホワイトノイズテクスチャ</td>
+</tr>
+<tr>
+<td>ボロノイテクスチャ</td>
+<td>Voronoi Texture</td>
+<td>ボロノイテクスチャ</td>
+</tr>
+<tr>
+<td>マジックテクスチャ</td>
+<td>Magic Texture</td>
+<td>マジックテクスチャ</td>
+</tr>
+<tr>
+<td>波テクスチャ</td>
+<td>Wave Texture</td>
+<td>波テクスチャ</td>
+</tr>
+<tr>
+<td>Gaborテクスチャ</td>
+<td>Gabor Texture</td>
+<td>Gaborテクスチャ</td>
+</tr>
+<tr>
+<td>チェッカーテクスチャ</td>
+<td>Checker Texture</td>
+<td>チェッカーテクスチャ</td>
+</tr>
+<tr>
+<td>レンガテクスチャ</td>
+<td>Brick Texture</td>
+<td>レンガテクスチャ</td>
+</tr>
+<tr>
+<td>グラデーションテクスチャ</td>
+<td>Gradient Texture</td>
+<td>グラデーションテクスチャ</td>
+</tr>
+<tr>
+<td>ミックス</td>
+<td>Mix</td>
+<td>ミックス</td>
+</tr>
+<tr>
+<td>暗い方</td>
+<td>Darken</td>
+<td>暗い方</td>
+</tr>
+<tr>
+<td>乗算</td>
+<td>Multiply</td>
+<td>乗算</td>
+</tr>
+<tr>
+<td>焼き込みカラー</td>
+<td>Color Burn</td>
+<td>焼き込みカラー</td>
+</tr>
+<tr>
+<td>明るい方</td>
+<td>Lighten</td>
+<td>明るい方</td>
+</tr>
+<tr>
+<td>スクリーン</td>
+<td>Screen</td>
+<td>スクリーン</td>
+</tr>
+<tr>
+<td>覆い焼きカラー</td>
+<td>Color Dodge</td>
+<td>覆い焼きカラー</td>
+</tr>
+<tr>
+<td>加算</td>
+<td>Add</td>
+<td>加算</td>
+</tr>
+<tr>
+<td>オーバーレイ</td>
+<td>Overlay</td>
+<td>オーバーレイ</td>
+</tr>
+<tr>
+<td>ソフトライト</td>
+<td>Soft Light</td>
+<td>ソフトライト</td>
+</tr>
+<tr>
+<td>リニアライト</td>
+<td>Linear Light</td>
+<td>リニアライト</td>
+</tr>
+<tr>
+<td>差分</td>
+<td>Difference</td>
+<td>差分</td>
+</tr>
+<tr>
+<td>除外</td>
+<td>Exclusion</td>
+<td>除外</td>
+</tr>
+<tr>
+<td>減算</td>
+<td>Subtract</td>
+<td>減算</td>
+</tr>
+<tr>
+<td>除算</td>
+<td>Divide</td>
+<td>除算</td>
+</tr>
+<tr>
+<td>色相</td>
+<td>Hue</td>
+<td>色相</td>
+</tr>
+<tr>
+<td>彩度</td>
+<td>Saturation</td>
+<td>彩度</td>
+</tr>
+<tr>
+<td>カラー</td>
+<td>Color</td>
+<td>カラー</td>
+</tr>
+<tr>
+<td>値</td>
+<td>Value</td>
+<td>値</td>
+</tr>
+<tr>
+<td>カラーランプ</td>
+<td>Color Ramp</td>
+<td>カラーランプ</td>
+</tr>
+<tr>
+<td>レンズ設定</td>
+<td>Lens Settings</td>
+<td>レンズ設定</td>
+</tr>
+<tr>
+<td>F値</td>
+<td>F-Stop</td>
+<td>F値</td>
+</tr>
+<tr>
+<td>最大ぼかし</td>
+<td>Max Blur</td>
+<td>最大ぼかし</td>
+</tr>
+<tr>
+<td>フィルム透過がOFFのため機能しません</td>
+<td>Film Transparent is OFF — filter inactive</td>
+<td>フィルム透過がOFFのため機能しません</td>
+</tr>
+<tr>
+<td>フィルム透過を有効化</td>
+<td>Enable Film Transparent</td>
+<td>フィルム透過を有効化</td>
+</tr>
+<tr>
+<td>幅</td>
+<td>Width</td>
+<td>幅</td>
+</tr>
+<tr>
+<td>高さ</td>
+<td>Height</td>
+<td>高さ</td>
+</tr>
+<tr>
+<td>回転</td>
+<td>Rotation</td>
+<td>回転</td>
+</tr>
+<tr>
+<td>ぼかし</td>
+<td>Blur</td>
+<td>ぼかし</td>
+</tr>
+<tr>
+<td>Z正規化</td>
+<td>Normalize Z</td>
+<td>Z正規化</td>
+</tr>
+<tr>
+<td>マスクぼかし</td>
+<td>Mask Blur</td>
+<td>マスクぼかし</td>
+</tr>
+</tbody>
+</table>
+<h4 id="preview-viewer">Preview &amp; Viewer</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>背景にビューアーを表示</td>
+<td>Show Viewer as Background</td>
+<td>背景にビューアーを表示</td>
+</tr>
+<tr>
+<td>チャンネル</td>
+<td>Channels</td>
+<td>チャンネル</td>
+</tr>
+<tr>
+<td>ズーム</td>
+<td>Zoom</td>
+<td>ズーム</td>
+</tr>
+<tr>
+<td>オフセット</td>
+<td>Offset</td>
+<td>オフセット</td>
+</tr>
+<tr>
+<td>移動</td>
+<td>Move</td>
+<td>移動</td>
+</tr>
+<tr>
+<td>フィット</td>
+<td>Fit</td>
+<td>フィット</td>
+</tr>
+<tr>
+<td>背景をリセット</td>
+<td>Reset Background</td>
+<td>背景をリセット</td>
+</tr>
+<tr>
+<td>背景</td>
+<td>Background</td>
+<td>背景</td>
+</tr>
+</tbody>
+</table>
+<h4 id="layers-layer-menu">Layers &amp; layer menu</h4>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>English</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>レイヤーメニューを開く</td>
+<td>Open Layer Menu</td>
+<td>レイヤーメニューを開く</td>
+</tr>
+<tr>
+<td>レイヤー名</td>
+<td>Layer Name</td>
+<td>レイヤー名</td>
+</tr>
+<tr>
+<td>名前</td>
+<td>Name</td>
+<td>名前</td>
+</tr>
+<tr>
+<td>種別</td>
+<td>Type</td>
+<td>種別</td>
+</tr>
+<tr>
+<td>内側</td>
+<td>Inner</td>
+<td>内側</td>
+</tr>
+<tr>
+<td>エッジ</td>
+<td>Edge</td>
+<td>エッジ</td>
+</tr>
+<tr>
+<td>ソース</td>
+<td>Source</td>
+<td>ソース</td>
+</tr>
+<tr>
+<td>フレーム数</td>
+<td>Frames</td>
+<td>フレーム数</td>
+</tr>
+<tr>
+<td>開始</td>
+<td>Start</td>
+<td>開始</td>
+</tr>
+<tr>
+<td>ペイントモードへ</td>
+<td>Enter Paint Mode</td>
+<td>ペイントモードへ</td>
+</tr>
+<tr>
+<td>白=表示 / 黒=非表示</td>
+<td>White = Show / Black = Hide</td>
+<td>白=表示 / 黒=非表示</td>
+</tr>
+<tr>
+<td>シーン (レンダーレイヤー)</td>
+<td>Scene (Render Layer)</td>
+<td>シーン (レンダーレイヤー)</td>
+</tr>
+<tr>
+<td>画像</td>
+<td>Image</td>
+<td>画像</td>
+</tr>
+<tr>
+<td>連番画像</td>
+<td>Image Sequence</td>
+<td>連番画像</td>
+</tr>
+<tr>
+<td>動画クリップ</td>
+<td>Movie Clip</td>
+<td>動画クリップ</td>
+</tr>
+<tr>
+<td>楕円マスク</td>
+<td>Ellipse Mask</td>
+<td>楕円マスク</td>
+</tr>
+<tr>
+<td>ボックスマスク</td>
+<td>Box Mask</td>
+<td>ボックスマスク</td>
+</tr>
+<tr>
+<td>ダブルエッジマスク</td>
+<td>Double Edge Mask</td>
+<td>ダブルエッジマスク</td>
+</tr>
+<tr>
+<td>ペイントマスク (画像に塗る)</td>
+<td>Paint Mask (paint on image)</td>
+<td>ペイントマスク (画像に塗る)</td>
+</tr>
+<tr>
+<td>調整レイヤーを追加</td>
+<td>Add Adjustment Layer</td>
+<td>調整レイヤーを追加</td>
+</tr>
+<tr>
+<td>フィルターを追加</td>
+<td>Add Filter</td>
+<td>フィルターを追加</td>
+</tr>
+<tr>
+<td>入力を追加</td>
+<td>Add Input</td>
+<td>入力を追加</td>
+</tr>
+<tr>
+<td>マスクを追加</td>
+<td>Add Mask</td>
+<td>マスクを追加</td>
+</tr>
+<tr>
+<td>プリセットを追加</td>
+<td>Add Preset</td>
+<td>プリセットを追加</td>
+</tr>
+<tr>
+<td>レイヤーを追加</td>
+<td>Add Layer</td>
+<td>レイヤーを追加</td>
+</tr>
+<tr>
+<td>新規グループ</td>
+<td>New Group</td>
+<td>新規グループ</td>
+</tr>
+<tr>
+<td>グループ解除</td>
+<td>Ungroup</td>
+<td>グループ解除</td>
+</tr>
+<tr>
+<td>レイヤー名を変更</td>
+<td>Rename Layer</td>
+<td>レイヤー名を変更</td>
+</tr>
+<tr>
+<td>マスクをペイント</td>
+<td>Paint Mask</td>
+<td>マスクをペイント</td>
+</tr>
+<tr>
+<td>コンポジットへ戻る</td>
+<td>Back to Compositor</td>
+<td>コンポジットへ戻る</td>
+</tr>
+<tr>
+<td>(戻るときはサイドバーのRenderFlow Studiosタブ)</td>
+<td>(Use the RenderFlow Studios tab in the sidebar to return)</td>
+<td>(戻るときはサイドバーのRenderFlow Studiosタブ)</td>
+</tr>
+<tr>
+<td>不透明度</td>
+<td>Opacity</td>
+<td>不透明度</td>
+</tr>
+<tr>
+<td>レイヤーメニュー</td>
+<td>Layer Menu</td>
+<td>レイヤーメニュー</td>
+</tr>
+<tr>
+<td>(背景)</td>
+<td>(Background)</td>
+<td>(背景)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="development.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Development">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Development
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      ©2026 Adacchi-MultiCreator ALL Rights Reserved.
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://x.com/3d_manga19094" target="_blank" rel="noopener" title="Adacchi on X" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Adacchi-MultiCreator/RenderFlow-Studio-Issues" target="_blank" rel="noopener" title="Issues" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.instant", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/extra.js?v=67485120"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
